@@ -1,10 +1,10 @@
 import os
 import time
-from music import music
+from music import music #importing the music function from music.py
 from threading import Thread
-from video_display import videos
+from video_display import videos #importing videos function from video_display.py
 
-#This is where all the text and video and sound will be display
+#This is where all the text, video and sound will be run
 
 def read(): #This function allow us to open and read each individual .txt file(the one we convert in image.py)
     con = True
