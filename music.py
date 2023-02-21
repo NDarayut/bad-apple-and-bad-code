@@ -1,9 +1,10 @@
 import pygame
+
 #Playing the music
 def music():
     pygame.init()
     pygame.mixer.init()
-    sound = pygame.mixer.Sound("BadappleAud.mp3")#Audio file name
+    sound = pygame.mixer.Sound("BadappleAud.mp3")
     sound.set_volume(0.2)
     sound.play()
     while pygame.mixer.get_busy():
