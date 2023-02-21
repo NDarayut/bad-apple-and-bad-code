@@ -1,4 +1,4 @@
-# bad-apple-and-bad-code
+# Bad-Apple-and-bad-code
 After seeing [SetuMar's](https://www.youtube.com/watch?v=tjSRx2eydwk) video, I really felt inspired and wanted to make one myself.  
 So here's my janky and less intuitive way of playing Bad Apple with python.  
   
