@@ -44,6 +44,11 @@ pygame module were use to play the audio, however you can use any other module y
   
     
 * __Step 4__: Displaying the video  
+First, we resize the video because the original is too big  
+`width = int(frames.shape[1] * scale)` Number 1 indicates that it's a width  
+`height = int(frames.shape[0] * scale` Number 0 indicates that it's a height  
+`cv.waitKey(20) & 0xFF==ord("q")` This line code mean, you have to wait 20ms after pressing "q" before the video closes  
+[Video](https://www.youtube.com/watch?v=oXlwWbU8l2o&t=1329s)
 
 
 

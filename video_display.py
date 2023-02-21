@@ -13,7 +13,7 @@ def videos():
 
 
     while True:
-        time.sleep(0.007) 
+        time.sleep(0.007) #Adjust the timing of the video
         isTrue, frames = capture.read()
         frame_resized = rescale_frame(frames, scale=.5)
         
