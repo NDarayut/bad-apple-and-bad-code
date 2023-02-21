@@ -6,7 +6,7 @@ import os
 cap = cv2.VideoCapture("Video/Badapple.mp4") 
 
 try:
-    if not os.path.exists('data'): #Check if a path has been created, if not it will make one and name it "data"
+    if not os.path.exists('data'): 
         os.makedirs('data')
 except OSError:
     print ('Error: Creating directory of data')
@@ -17,7 +17,7 @@ while(True):
     ret, frame = cap.read()
 
     #Saves image of the current frame in jpg file
-    name = './data/frame' + str(currentFrame) + '.jpg' #All the images are saved in a folder called 'data'
+    name = './data/frame' + str(currentFrame) + '.jpg' 
     print ('Creating...' + name)
     cv2.imwrite(name, frame)
 
