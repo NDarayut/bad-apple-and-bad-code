@@ -1,10 +1,10 @@
 import cv2 as cv
 import time
 
-capture = cv.VideoCapture("Video/Badapple.mp4")
+capture = cv.VideoCapture("Video/Badapple.mp4") #We specify the file path, mine is in a folder called Video
 
 def videos():
-    def rescale_frame(frames, scale=0.75):
+    def rescale_frame(frames, scale=0.75): #You can adjust the video scale to your liking, 0.75 being 75% and 1 being 100%
         width = int(frames.shape[1] * scale)
         height = int(frames.shape[0] * scale)
         dimension = (width,height)
@@ -13,13 +13,12 @@ def videos():
 
 
     while True:
-        time.sleep(0.007)
+        time.sleep(0.007) #Use to delay the video to match with read_file.py and audio timing
         isTrue, frames = capture.read()
         frame_resized = rescale_frame(frames, scale=.5)
         
-        cv.imshow("Video resized", frame_resized)
-        #cv.imshow("Video", frames)
-        if cv.waitKey(20) & 0xFF==ord("q"):
+        cv.imshow("Video resized", frame_resized) #This function display the video
+        if cv.waitKey(20) & 0xFF==ord("q"): #The video will break when you press "q" or you can set it to any key
             break
 
     capture.releae()
