@@ -1,7 +1,7 @@
 # Bad-Apple-and-bad-code
 After seeing [SetuMar's](https://www.youtube.com/watch?v=tjSRx2eydwk) video, I really felt inspired and wanted to make one myself.  
 So here's my janky and less intuitive way of playing Bad Apple with python.  
-Also, I will leave link at the end of each step to a bunch of youtube videos based on the steps.  
+Also, I will leave link at the end of each step to a youtube video based on the steps.  
   
   
 # All the modules you'll need:
