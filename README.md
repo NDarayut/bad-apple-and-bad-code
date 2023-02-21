@@ -1,7 +1,7 @@
 # Bad-Apple-and-bad-code
 After seeing [SetuMar's](https://www.youtube.com/watch?v=tjSRx2eydwk) video, I really felt inspired and wanted to make one myself.  
 So here's my janky and less intuitive way of playing Bad Apple with python.  
-Also, I will leave links at the end of each step to a bunch of youtube videos based on the steps.  
+Also, I will leave link at the end of each step to a youtube video based on the steps.  
   
   
 # All the modules you'll need:
@@ -14,8 +14,8 @@ Also, I will leave links at the end of each step to a bunch of youtube videos ba
 * __numpy__: `pip install numpy`  
   
 # Step-by-step explanation(not very good)
-* __Step 1__: Splitting video into individual frame  
-Playing the video from file with OpenCV and splitting them into individual frame
+* __Step 1__: Splitting video into individual frame    
+Playing the video from file with OpenCV and splitting them into individual frame  
 `cap = cv2.VideoCapture("Video/Badapple.mp4")`  
 (path-of-video/video's-name), I recommend saving everything in a project folder for easier access. Since my video is in a folder called "Video", I specify the folder name first but if your video is saved in the project folder and not inside another folder, you can straight up specify the video's name instead.  
 `if not os.path.exists('data'):`  This line of code will check if a folder named 'data' existed.  
