@@ -38,7 +38,7 @@ __P.S Double backslash are needed for python to read our code.__
   
 * __Step 3__: Playing the audio  
 pygame module were use to play the audio, however you can use any other module you'd like.  
-`pygame.init()` This line of code initialize all the pygame module, this is needed in order for the other command to work.  
+`pygame.init()` This line of code initialize all the pygame module. This is needed in order for the other command to work.  
 `sound = pygame.mixer.Sound("BadappleAud.mp3")` We specify the audio's name in this function, mine is "BadappleAud.mp3"  
 `while pygame.mixer.get_busy():`
     `pygame.time.delay(100)` This while loop check if the audio is playing, if it is, we delay it by 100ms  
